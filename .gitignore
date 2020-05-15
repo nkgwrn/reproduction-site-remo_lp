@@ -1,0 +1,6 @@
+# intellij editor setting file
+.idea
+
+# js modules
+node_modules
+.DS_store

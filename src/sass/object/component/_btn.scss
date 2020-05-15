@@ -1,0 +1,429 @@
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &.-center {
+    justify-content: center !important;
+  }
+}
+
+.c-btn--primary {
+  $color: $color-theme;
+
+  color: $color;
+  background: #fff;
+  border: 1px solid $color;
+  //  @include transition((color, background));
+  border-radius: 500px;
+  padding: 0.4em 1em;
+
+  &:hover {
+
+    //    background: $color;
+    //    color: #fff;
+    //    color: $color;
+    //    background: none;
+    //
+    //    &::before,
+    //    &::after {
+    //      background: $color;
+    //    }
+  }
+
+  &.-disabled {
+    color: #fff;
+    background: $color-gray;
+    border: 1px solid $color-gray;
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &:hover {
+      transition: none;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.c-btn--secondary {
+  $color: $color-gray-dark;
+
+  color: #fff;
+  background: $color;
+  justify-content: flex-start;
+  border: 1px solid $color;
+  @include transition((color, background));
+
+  &:hover {
+    color: #fff;
+
+    //    &:hover {
+    //      color: $color;
+    //      background: none;
+    //
+    //      &::before,
+    //      &::after {
+    //        background: $color;
+    //      }
+    //    }
+  }
+
+  &.-disabled {
+    color: #fff;
+    background: $color-gray;
+    border: 1px solid $color-gray;
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &:hover {
+      transition: none;
+    }
+  }
+}
+
+.c-btn--tertiary {
+  $color: $color-gray-dark;
+
+  color: #fff;
+  background: $color;
+  justify-content: flex-start;
+  border: 1px solid $color;
+  @include transition((color, background));
+
+
+
+  &:hover {
+    color: #fff;
+
+    &:hover {
+      color: $color;
+      background: none;
+
+      &::before,
+      &::after {
+        background: $color;
+      }
+    }
+  }
+
+  &.-disabled {
+    color: #fff;
+    background: $color-gray;
+    border: 1px solid $color-gray;
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &:hover {
+      transition: none;
+    }
+  }
+}
+
+.c-btn--quaternary {
+  $color: $color-gray;
+
+  color: #fff;
+  background: $color;
+  justify-content: flex-start;
+  border: 1px solid $color;
+  @include transition((color, background));
+
+
+
+  &:hover {
+    color: #fff;
+
+    &:hover {
+      color: $color;
+      background: none;
+
+      &::before,
+      &::after {
+        background: $color;
+      }
+    }
+  }
+
+  &.-disabled {
+    color: #fff;
+    background: $color-gray;
+    border: 1px solid $color-gray;
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &:hover {
+      transition: none;
+    }
+  }
+}
+
+.c-btn--common {
+  padding: 1em 1em;
+  letter-spacing: 0.1em;
+}
+
+.c-btn--rounded {
+  border-radius: 500px;
+  padding: 0.4em 1em;
+}
+
+.c-btn--strong {
+  $color: $color-red-dark;
+  @include fontSize(2.2);
+  font-weight: bold;
+  background: #fff;
+  color: $color;
+  border: 4px solid $color;
+  @include transition((color, background));
+
+  @include mqSm {
+    @include fontSize(1.8, sp);
+  }
+
+  &:hover {
+    color: #fff;
+    background: $color;
+
+    &::before,
+    &::after {
+      background: #fff;
+    }
+  }
+}
+
+.c-btn--color-red {
+  color: #fff;
+  background: $color-red;
+  border: 1px solid $color-red;
+}
+
+.c-btn--red {
+  a {
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    @include transition((color, background));
+    background: $color-red-dark;
+    border: 1px solid $color-red;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-red-dark;
+      background: #fff;
+    }
+
+    @include mqMd {
+      font-size: 1.6rem
+    }
+
+    @include mqSm {
+      @include fontSize(1.4, sp);
+    }
+  }
+}
+
+.c-btn--green {
+  a {
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    font-weight: bold; //		background-image: -webkit-gradient( linear, left top, left bottom, from(#D21F31), color-stop(0.49, #BB122E), color-stop(0.50, #AD0C28), to(#980725));
+    border-radius: 5px;
+    background: #157C27;
+    border: 1px solid #34AD5D; //	@include transition((color, background));
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background: #34AD5D;
+    }
+
+    @include mqMd {
+      font-size: 1.6rem
+    }
+
+    @include mqSm {
+      @include fontSize(1.4, sp);
+    }
+  }
+}
+
+.c-btn--b {
+  a {
+    color: $color-red-dark;
+    padding: 10px 10px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    font-weight: bold; //		background-image: -webkit-gradient( linear, left top, left bottom, from(#D21F31), color-stop(0.49, #BB122E), color-stop(0.50, #AD0C28), to(#980725));
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid $color-red-dark; //	@include transition((color, background));
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-red-dark;
+      background: #ebebeb;
+    }
+
+    @include mqMd {
+      font-size: 1.6rem
+    }
+
+    @include mqSm {
+      @include fontSize(1.4, sp);
+    }
+  }
+}
+
+.c-btn--arrow {
+  position: relative;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  &::before,
+  &::after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    height: 1px;
+    transition: all .2s;
+  }
+
+  &::before {
+    width: 20px;
+  }
+
+  &::after {
+    width: 6px;
+    transform: rotateZ(30deg);
+    transform-origin: 100% 0;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      right: 10px;
+    }
+  }
+}
+
+.c-btn--arrow-back {
+  position: relative;
+  padding-left: 50px;
+
+  &::before,
+  &::after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    height: 1px;
+    transition: all .2s;
+  }
+
+  &::before {
+    width: 20px;
+  }
+
+  &::after {
+    width: 6px;
+    transform: rotateZ(-30deg);
+    transform-origin: 0 0;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      left: 10px;
+    }
+  }
+}
+
+.c-btn--blank {
+  position: relative;
+  padding-right: 34px;
+  background-image: url(/common/image/icon/icon_blank@2x.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 14px;
+
+  &:hover {
+    background-color: #fff;
+    background-image: url(/common/image/icon/icon_blank_red@2x.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 14px;
+  }
+
+  &.-blank-grey {
+    background-image: url(/common/image/icon/icon_blank@2x.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 14px;
+
+    &:hover:hover {
+      background-color: #fff;
+      background-image: url(/common/image/icon/icon_blank_grey@2x.png);
+      background-repeat: no-repeat;
+      background-position: 90% center;
+      background-size: 14px;
+    }
+
+
+  }
+}
+
+.c-linkArrow {
+  display: inline-block;
+  padding-left: 24px;
+  position: relative;
+  background: url(/common/image/btn_linkArrow.png) no-repeat left center;
+
+  @include mqSm {
+    background-size: calcVw(30);
+  }
+}
+
+.c-linkNext {
+  display: inline-block;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    top: 50%;
+    right: 3px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid $color-red;
+    border-right: 1px solid $color-red;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+
+.botancov {
+  width: 300px;
+  height: 80px;
+}
+
+@include mqMd {}
+
+@include mqSm {}

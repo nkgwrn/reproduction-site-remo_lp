@@ -1,0 +1,75 @@
+.c-main {
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	line-height: $line-height-default;
+}
+
+
+.c-container {
+	//最大幅のある大枠
+	max-width: calc(100% - 30px);
+	width: $width-default-max; //1500
+	margin-left: auto;
+	margin-right: auto;
+
+
+	@include mqSm {
+		&.-spShort {
+			max-width: calc(100% - 17.333vw);
+		}
+	}
+}
+
+.c-column {
+	display: flex;
+	justify-content: space-between;
+
+	@include mqMd {
+		flex-wrap: wrap;
+	}
+
+	&__primary {
+		background: #fff;
+		width: calc(100% - 260px); //	width: $width-column-main;
+		padding-left: 0;
+		padding-right: 40px;
+
+		@include mqMd {
+			width: 100%;
+			padding-right: 0;
+		}
+
+		&--inner {
+			padding: 20px 40px 20px 20px;
+		}
+
+		&.-bottom {
+			padding-bottom: 80px;
+
+			@include mqMd {
+				padding-bottom: 40px;
+			}
+
+			@include mqSm {
+				padding-bottom: calcVw(80);
+			}
+		}
+
+		#c-article {
+			overflow-x: auto;
+			padding: 20px;
+
+			@include mqSm {
+				padding: calcVw(50) calcVw(30);
+			}
+		}
+	}
+
+}
+
+@include mqSm {
+	.c-contents {
+		overflow: hidden;
+	}
+}

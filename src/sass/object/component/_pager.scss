@@ -1,0 +1,121 @@
+.c-pager {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 3%;
+	padding-bottom: 3%;
+
+	> a {
+		text-decoration: none;
+		display: block;
+	}
+
+	&__label {
+		font-size: 1.4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		line-height: 1.6;
+
+		span {
+			font-weight: bold;
+			color: $color-theme;
+		}
+
+		@include mqSm {
+			@include fontSize(1.0, sp);
+		}
+
+		&--center {
+			align-items: center;
+		}
+
+		&--next {
+			align-items: flex-end;
+		}
+	}
+
+	&__control {
+		display: flex;
+	}
+
+	&__arrow {
+		position: relative;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+
+		@include mqSm {
+			width: calcVw(60);
+			height: calcVw(60);
+		}
+
+		&--prev {
+			&::before {
+				content: '';
+				width: 2px;
+				height: 10px;
+				background: $color-black;
+				position: absolute;
+				bottom: 0;
+				left: 13%;
+				transform: skewX(-45deg);
+			}
+
+			&::after {
+				content: '';
+				width: 28px;
+				height: 2px;
+				background: $color-black;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+
+				@include mqSm {
+					width: calcVw(28);
+				}
+			}
+		}
+
+		&--next {
+			&::before {
+				content: '';
+				width: 2px;
+				height: 10px;
+				background: $color-black;
+				position: absolute;
+				bottom: 0;
+				right: 13%;
+				transform: skewX(45deg);
+			}
+
+			&::after {
+				content: '';
+				width: 28px;
+				height: 2px;
+				background: $color-black;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+
+				@include mqSm {
+					width: calcVw(28);
+				}
+			}
+		}
+	}
+
+	&__label {
+		.label-eng {
+			font-size: 2.0rem;
+			//	font-family: 'Roboto', sans-serif;
+			color: $color-black;
+			font-style: italic;
+
+			@include mqSm {
+				@include fontSize(1.3, sp);
+			}
+		}
+	}
+}

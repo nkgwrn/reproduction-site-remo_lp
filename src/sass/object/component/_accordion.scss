@@ -1,0 +1,15 @@
+.c-acBody {
+	display: none;
+}
+
+.c-acList {
+	&__item {
+		> a {
+			display: block;
+		}		
+	}
+	.c-acTrigger {
+		position: relative;
+		cursor: pointer;
+	}
+}

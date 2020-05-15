@@ -1,0 +1,34 @@
+.u-bold,
+.u-strong {
+	font-weight: bold;
+}
+
+.u-large {
+	font-size: 1.142em;
+}
+
+.u-empha {
+	font-size: 1.32em;
+  font-weight: bold;
+}
+
+.u-small {
+	font-size: 0.875em;
+}
+
+.u-red {
+	color: $color-red;
+}
+
+.u-theme {
+	color: $color-theme;
+}
+
+.u-bold-red {
+	color: $color-red-dark;
+	font-weight: bold;
+}
+
+.u-black {
+	color: $color-black;
+}
