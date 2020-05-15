@@ -1,10 +1,11 @@
 {
   "name": "1q-02-remo",
   "version": "1.0.0",
-  "description": "![Build Status](https://gitlab.com/pages/plain-html/badges/master/build.svg)",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "gulp-ejs": "^5.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-progeny": "^0.4.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
