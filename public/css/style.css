@@ -460,6 +460,50 @@ img {
 /* ---------------------------------------------------------
  Project
 --------------------------------------------------------- */
+.p-control {
+  margin-bottom: 0;
+}
+
+.p-life__body--txt {
+  padding-top: 10px;
+}
+
+.p-life__body--scene {
+  padding: 20px 18% 60px;
+}
+
+.p-life-scene {
+  display: flex;
+  justify-content: center;
+}
+
+.p-life-scene__item {
+  margin-right: 4vw;
+  flex: 1;
+}
+
+.p-life-scene__item--link {
+  position: relative;
+}
+
+.p-life-scene__item--link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #c3ccee;
+  bottom: -3px;
+  left: 0;
+}
+
+.p-life-scene__item:last-child {
+  margin-right: 0;
+}
+
+.p-life .c-panel__head {
+  padding-top: 20px;
+}
+
 .p-remote__body--image {
   margin-top: 110px;
   padding: 0px 18% 5px;

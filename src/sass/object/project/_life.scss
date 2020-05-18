@@ -1,0 +1,43 @@
+.p-life {
+  &__body {
+    &--txt {
+      padding-top: 10px;
+    }
+
+    &--scene {
+      padding: 20px 18% 60px;
+    }
+  }
+
+  &-scene {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      margin-right: 4vw;
+      flex: 1;
+
+      &--link {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          background-color: lighten($color: $color-blue, $amount: 30%);
+          bottom: -3px;
+          left: 0;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .c-panel__head {
+    padding-top: 20px;
+  }
+}

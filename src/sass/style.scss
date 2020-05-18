@@ -31,6 +31,8 @@
  Project
 --------------------------------------------------------- */
 // コンポーネントより粒度の大きいもの（とあるページでしか使わないものなど）を追加していく
+@import "object/project/control";
+@import "object/project/life";
 @import "object/project/remote";
 @import "object/project/rule";
 @import "object/project/mechanism";

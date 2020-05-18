@@ -13,12 +13,17 @@
   />
   <link
     rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/css/swiper.min.css"
+  />
+  <!-- <link
+    rel="stylesheet"
     type="text/css"
     href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css"
-  />
-  <link rel="stylesheet" href="css/style.css" />
+  /> -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/js/swiper.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-  <!-- <script src="js/index.js"></script> -->
+  <script src="./js/index.js"></script>
 </head>
 
   <body id="wrapper">
@@ -37,7 +42,24 @@
               Nature&ensp;Remo（ネイチャーリモ）は、お使いの家電で手軽にスマートホームを実現するスマートリモコンです。<br />
               外出先からスマートフォンでエアコンを操作したり、スマートスピーカーから音声でテレビや照明を操作することができます。
             </p>
-            <div class="p-control__body--image"></div>
+            <div class="p-control__body--image">
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="image/img_control_01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/img_control_02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/img_control_03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.c-container -->
@@ -48,18 +70,32 @@
             子育てやペットとの暮らしを<br />もっと便利に
           </h2>
           <div class="c-panel__body p-life__body">
-            <p class="c-panel__body--txt">
+            <p class="c-panel__body--txt p-life__body--txt">
               ペットの室温管理や、子育て夫婦の時短アイテムとしても。<br />
               様々なシーンでお使いいただけます。
             </p>
             <div class="p-life__body--scene">
-              <ul>
-                <li><img src="" alt="" /><a href="">一人暮らしの方に＞</a></li>
-                <li>
-                  <img src="" alt="" /><a href="">ペットオーナーの方に＞</a>
+              <ul class="p-life-scene">
+                <li class="p-life-scene__item">
+                  <img src="image/img_life_single.png" alt="" /><a
+                    href=""
+                    class="p-life-scene__item--link"
+                    >一人暮らしの方に＞</a
+                  >
                 </li>
-                <li>
-                  <img src="" alt="" /><a href="">お子さんのいるご家庭に＞</a>
+                <li class="p-life-scene__item">
+                  <img src="image/img_life_owner.png" alt="" /><a
+                    href=""
+                    class="p-life-scene__item--link"
+                    >ペットオーナーの方に＞</a
+                  >
+                </li>
+                <li class="p-life-scene__item">
+                  <img src="image/img_life_family.png" alt="" /><a
+                    href=""
+                    class="p-life-scene__item--link"
+                    >お子さんのいるご家庭に＞</a
+                  >
                 </li>
               </ul>
             </div>
