@@ -1,0 +1,19 @@
+.c-panel {
+  margin-bottom: 40px;
+
+  &__head {
+    font-size: 2em;
+    padding-top: 110px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  &__body {
+    font-size: 0.875em;
+
+    &--txt {
+      line-height: 2.2;
+      margin-bottom: 20px;
+    }
+  }
+}

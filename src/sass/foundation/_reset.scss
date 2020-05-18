@@ -78,7 +78,7 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 body {
@@ -113,7 +113,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -125,7 +125,6 @@ a {
   background: transparent;
 }
 
-
 /* change colours to suit your needs */
 
 ins {
@@ -133,7 +132,6 @@ ins {
   color: #000;
   text-decoration: none;
 }
-
 
 /* change colours to suit your needs */
 
@@ -158,7 +156,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 /* change border colour to suit your needs */
 

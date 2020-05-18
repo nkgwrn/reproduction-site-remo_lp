@@ -1,0 +1,15 @@
+.p-mechanism {
+  &__body {
+    &--txt {
+      line-height: 1.4;
+    }
+
+    &--image {
+      margin-top: 40px;
+    }
+  }
+
+  &__capture {
+    margin-bottom: -40px;
+  }
+}

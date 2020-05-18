@@ -1,0 +1,11 @@
+.p-model {
+  &__body {
+    &--image {
+      padding: 0px 13%;
+    }
+  }
+
+  &__capture {
+    text-align: left;
+  }
+}

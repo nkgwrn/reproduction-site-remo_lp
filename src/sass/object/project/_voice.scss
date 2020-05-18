@@ -1,0 +1,20 @@
+.p-voice {
+  &__body {
+    margin-top: 40px;
+
+    &--voices {
+      > * {
+        margin-bottom: 50px;
+        line-height: 1.2;
+      }
+    }
+
+    &--image {
+      margin-top: -15px;
+    }
+
+    &--movie {
+      margin-top: 35px;
+    }
+  }
+}

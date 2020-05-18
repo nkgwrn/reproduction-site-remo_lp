@@ -2,14 +2,6 @@
 /* =========================================================
  Foundation
 ========================================================= */
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes blink {
   0% {
     opacity: 0;
@@ -435,13 +427,12 @@ img {
   margin-right: 10%;
 }
 
-.c-btn-purchase.-mb115 {
-  margin-bottom: 115px;
+.c-btn-purchase.-mb12 {
+  margin-bottom: 120px;
 }
 
 .c-capture {
-  margin-top: 30px;
-  line-height: 1.4;
+  margin-top: 20px;
 }
 
 /* ---------------------------------------------------------
