@@ -279,7 +279,7 @@ body {
   color: #333;
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: "M+ C Type-1 (basic latin) Regular", Arial, Helvetica, sans-serif;
+  font-family: "M PLUS 1p", Arial, Helvetica, sans-serif;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0.01em;
@@ -554,7 +554,7 @@ img {
 .p-os-list {
   display: flex;
   justify-content: center;
-  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .p-os-list__head {
@@ -567,7 +567,7 @@ img {
 }
 
 .p-store__body {
-  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -577,7 +577,7 @@ img {
 
 .p-api__body {
   font-size: 16px;
-  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .p-api__body--link {
@@ -593,7 +593,7 @@ img {
 
 .p-contact__body {
   font-size: 16px;
-  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 /* ---------------------------------------------------------
