@@ -6,6 +6,10 @@ const browserSync = require("browser-sync").create();
 const postcss = require("gulp-postcss");
 // const autoprefixer = require("gulp-autoprefixer");
 const autoprefixer = require("autoprefixer");
+const plumber = require("gulp-plumber");
+const notify = require("gulp-notify");
+const cache = require("gulp-cached");
+const progeny = require("gulp-progeny");
 
 function buildJS(cb) {
   gulp.src("./src/js/*.js").pipe(gulp.dest("./public/js"));
@@ -21,6 +25,13 @@ function buildImage(cb) {
 function buildSass(cb) {
   gulp
     .src("./src/sass/**/*.scss")
+    .pipe(cache("style"))
+    .pipe(progeny())
+    .pipe(
+      plumber({
+        errorHandler: notify.onError("Error: <%= error.message %>"),
+      })
+    )
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(
       postcss([
@@ -41,7 +52,7 @@ function buildSass(cb) {
 
 function buildEjs(cb) {
   gulp
-    .src(["./src/ejs/pages/*.ejs", "./src/ejs/components/_*.ejs"])
+    .src(["./src/ejs/pages/*.ejs", "!./src/ejs/components/_*.ejs"])
     .pipe(ejs())
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest("./public"));
