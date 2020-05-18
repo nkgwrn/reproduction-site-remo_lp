@@ -279,7 +279,7 @@ body {
   color: #333;
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "M+ C Type-1 (basic latin) Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0.01em;
@@ -405,6 +405,11 @@ img {
   margin-bottom: 10px;
 }
 
+.c-panel__head--sub {
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
 .c-panel__body {
   font-size: 0.875em;
 }
@@ -414,13 +419,13 @@ img {
   margin-bottom: 20px;
 }
 
-.c-btn-purchase {
+.c-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
 }
 
-.c-btn-purchase__item {
+.c-btn__item {
   height: 45px;
   border-radius: 30px;
   font-size: 10px;
@@ -431,11 +436,19 @@ img {
   justify-content: center;
 }
 
-.c-btn-purchase__item:first-child {
-  margin-right: 10%;
+.c-btn-purchase .c-btn__item:first-child {
+  margin-right: 8vw;
 }
 
-.c-btn-purchase.-mb115 {
+.c-btn-contact {
+  margin-top: 35px;
+}
+
+.c-btn-contact .c-btn__item {
+  width: 250px;
+}
+
+.c-btn.-mb115 {
   margin-bottom: 115px;
 }
 
@@ -483,6 +496,60 @@ img {
 .p-voice__body--voices > * {
   margin-bottom: 50px;
   line-height: 1.2;
+}
+
+.p-voice__body--image {
+  margin-top: -15px;
+}
+
+.p-voice__body--movie {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.p-os-list {
+  display: flex;
+  justify-content: center;
+  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+}
+
+.p-os-list__head {
+  margin-right: 5em;
+}
+
+.p-os-list:last-child {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.p-store__body {
+  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.p-store__body--image {
+  margin: 45px 0;
+}
+
+.p-api__body {
+  font-size: 16px;
+  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
+}
+
+.p-api__body--link {
+  padding-top: 5px;
+}
+
+.p-api__body--link a {
+  color: #333;
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #ddd;
+}
+
+.p-contact__body {
+  font-size: 16px;
+  font-family: "M+ C Type-1 (basic latin) Medium", Arial, Helvetica, sans-serif;
 }
 
 /* ---------------------------------------------------------

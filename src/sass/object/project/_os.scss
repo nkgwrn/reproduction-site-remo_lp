@@ -1,0 +1,15 @@
+.p-os {
+  &-list {
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-mid;
+
+    &__head {
+      margin-right: 5em;
+    }
+    &:last-child {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.c-btn-purchase {
+.c-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
@@ -12,9 +12,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 
-    &:first-child {
-      margin-right: 10%;
+  &-purchase {
+    .c-btn__item {
+      &:first-child {
+        margin-right: 8vw;
+      }
+    }
+  }
+
+  &-contact {
+    margin-top: 35px;
+    .c-btn__item {
+      width: 250px;
     }
   }
 
