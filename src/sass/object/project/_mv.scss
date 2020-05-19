@@ -1,0 +1,33 @@
+.p-mv {
+  height: 47vw;
+  background: url(../image/img_mv.jpg);
+  background-position: center 0;
+  background-size: 120%;
+  background-attachment: fixed;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: 2;
+
+    &__lead {
+      font-size: 0.875em;
+      color: #fff;
+      margin-top: -60px;
+    }
+  }
+}

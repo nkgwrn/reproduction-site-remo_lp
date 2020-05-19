@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
+  width: 100%;
 
   &__item {
     height: 45px;
@@ -16,6 +17,24 @@
 
     &:hover {
       background-color: $color-blue;
+
+      > a {
+        color: #fff;
+      }
+    }
+  }
+
+  &--mv {
+    position: absolute;
+    z-index: 2;
+    top: 72%;
+
+    &__item {
+      border: 2px solid #fff;
+
+      &:first-child {
+        margin-right: 8vw;
+      }
 
       > a {
         color: #fff;

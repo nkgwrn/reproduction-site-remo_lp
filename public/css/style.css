@@ -514,6 +514,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
+  width: 100%;
 }
 
 .c-btn__item {
@@ -533,6 +534,24 @@ img {
 }
 
 .c-btn__item:hover > a {
+  color: #fff;
+}
+
+.c-btn--mv {
+  position: absolute;
+  z-index: 2;
+  top: 72%;
+}
+
+.c-btn--mv__item {
+  border: 2px solid #fff;
+}
+
+.c-btn--mv__item:first-child {
+  margin-right: 8vw;
+}
+
+.c-btn--mv__item > a {
   color: #fff;
 }
 
@@ -556,6 +575,40 @@ img {
 /* ---------------------------------------------------------
  Project
 --------------------------------------------------------- */
+.p-mv {
+  height: 47vw;
+  background: url(../image/img_mv.jpg);
+  background-position: center 0;
+  background-size: 120%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.p-mv::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.p-mv__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: 2;
+}
+
+.p-mv__heading__lead {
+  font-size: 0.875em;
+  color: #fff;
+  margin-top: -60px;
+}
+
 .p-control {
   margin-bottom: 0;
 }
