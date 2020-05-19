@@ -32,6 +32,14 @@
     &__item {
       border: 2px solid #fff;
 
+      &:hover {
+        background-color: #fff;
+
+        > a {
+          color: $link-color;
+        }
+      }
+
       &:first-child {
         margin-right: 8vw;
       }

@@ -341,6 +341,43 @@ img {
 /* =========================================================
  Layout
 ========================================================= */
+.l-header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  padding: 15px 20px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header-logo {
+  display: block;
+  height: 100%;
+}
+
+.l-header-logo__img {
+  max-height: 100%;
+}
+
+.l-nav {
+  display: flex;
+  font-size: 0.875em;
+}
+
+.l-nav__item {
+  margin-left: 55px;
+}
+
+.l-nav__item__link {
+  color: #fff;
+}
+
+.l-nav__item__link:hover {
+  color: #98a7b4;
+}
+
 .l-footer {
   background-color: #dfe1e1;
   text-align: left;
@@ -545,6 +582,14 @@ img {
 
 .c-btn--mv__item {
   border: 2px solid #fff;
+}
+
+.c-btn--mv__item:hover {
+  background-color: #fff;
+}
+
+.c-btn--mv__item:hover > a {
+  color: #333;
 }
 
 .c-btn--mv__item:first-child {

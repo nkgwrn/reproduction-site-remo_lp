@@ -1,0 +1,35 @@
+.l-header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  padding: 15px 20px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logo {
+    display: block;
+    height: 100%;
+
+    &__img {
+      max-height: 100%;
+    }
+  }
+}
+
+.l-nav {
+  display: flex;
+  font-size: 0.875em;
+
+  &__item {
+    margin-left: 55px;
+    &__link {
+      color: #fff;
+
+      &:hover {
+        color: #98a7b4;
+      }
+    }
+  }
+}
