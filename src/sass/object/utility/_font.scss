@@ -1,34 +1,11 @@
-.u-bold,
-.u-strong {
-	font-weight: bold;
+.u-m1c {
+  font-family: $font-family-m1c;
 }
 
-.u-large {
-	font-size: 1.142em;
+.u-medium {
+  font-weight: 500;
 }
 
-.u-empha {
-	font-size: 1.32em;
-  font-weight: bold;
-}
-
-.u-small {
-	font-size: 0.875em;
-}
-
-.u-red {
-	color: $color-red;
-}
-
-.u-theme {
-	color: $color-theme;
-}
-
-.u-bold-red {
-	color: $color-red-dark;
-	font-weight: bold;
-}
-
-.u-black {
-	color: $color-black;
+.u-lt05 {
+  letter-spacing: 0.05em;
 }

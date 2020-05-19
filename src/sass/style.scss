@@ -12,7 +12,7 @@
  Layout
 ========================================================= */
 // @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
 // @import "layout/gnav";
 // @import "layout/main";
 /* =========================================================
@@ -49,3 +49,5 @@
 //いわゆる汎用クラスのことで、ほとんどの場合で単一のスタイルを持っています。
 //確実にスタイルを適応させるために!importantを指定します。
 @import "object/utility/border";
+@import "object/utility/margin";
+@import "object/utility/font";

@@ -12,24 +12,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s $ease-easeOut;
+
+    &:hover {
+      background-color: $color-blue;
+
+      > a {
+        color: #fff;
+      }
+    }
   }
 
-  &-purchase {
-    .c-btn__item {
+  &--purchase {
+    &__item {
       &:first-child {
         margin-right: 8vw;
       }
     }
   }
 
-  &-contact {
+  &--contact {
     margin-top: 35px;
-    .c-btn__item {
-      width: 250px;
+    &__item {
+      width: 230px;
     }
-  }
-
-  &.-mb115 {
-    margin-bottom: 115px;
   }
 }
