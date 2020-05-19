@@ -1,10 +1,37 @@
 .p-mv {
   height: 47vw;
-  background: url(../image/img_mv.jpg);
-  background-position: center 0;
-  background-size: 120%;
+  // background: url(../image/img_mv.jpg);
+  // background-position: center 0;
+  // background-size: 120%;
   background-attachment: fixed;
   position: relative;
+  background-repeat: no-repeat;
+
+  @include mqSm {
+    height: 145vw;
+    background-size: cover;
+    background-position-x: 80%;
+  }
+
+  &__bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: url(../image/img_mv.jpg);
+    background-position: center 0;
+    display: block;
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+    @include mqSm {
+      background-position-x: 80%;
+      background-size: 160%;
+      background-repeat: no-repeat;
+    }
+  }
 
   &::after {
     content: "";

@@ -88,6 +88,10 @@
 
 .u-mb115 {
   margin-bottom: 115px !important;
+
+  @include mqSm {
+    margin-bottom: 45px !important;
+  }
 }
 
 .u-mt80 {

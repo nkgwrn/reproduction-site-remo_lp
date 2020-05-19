@@ -12,13 +12,13 @@ body {
   line-height: $line-height-default;
   text-align: center;
 
-  @include mqMd {
-    @include fontSize($font-size-tab);
-  }
+  // @include mqMd {
+  //   @include fontSize($font-size-tab);
+  // }
 
-  @include mqSm {
-    @include fontSize($font-size-sp, sp);
-  }
+  // @include mqSm {
+  //   @include fontSize($font-size-sp, sp);
+  // }
 }
 
 @media all and (-ms-high-contrast: none) {

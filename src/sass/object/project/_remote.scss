@@ -3,6 +3,11 @@
     &--image {
       margin-top: 110px;
       padding: 0px 18% 5px;
+
+      @include mqSm {
+        margin-top: 35px;
+        padding: 0;
+      }
     }
   }
 }

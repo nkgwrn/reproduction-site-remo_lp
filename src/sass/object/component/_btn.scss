@@ -4,6 +4,10 @@
   margin-bottom: 45px;
   width: 100%;
 
+  @include mqSm {
+    display: block;
+  }
+
   &__item {
     height: 45px;
     border-radius: 30px;
@@ -14,6 +18,10 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s $ease-easeOut;
+
+    @include mqSm {
+      margin: 0 auto;
+    }
 
     &:hover {
       background-color: $color-blue;
@@ -54,12 +62,21 @@
     &__item {
       &:first-child {
         margin-right: 8vw;
+
+        @include mqSm {
+          margin: 0 auto 35px;
+        }
       }
     }
   }
 
   &--contact {
     margin-top: 35px;
+
+    @include mqSm {
+      margin-bottom: 70px;
+    }
+
     &__item {
       width: 230px;
     }

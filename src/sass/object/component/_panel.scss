@@ -1,11 +1,21 @@
 .c-panel {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
 
   &__head {
     font-size: 2em;
     padding-top: 110px;
     line-height: 1.8;
     margin-bottom: 10px;
+
+    @include mqSm {
+      font-size: 22px;
+      padding-top: 30px;
+    }
+
+    &--top {
+      padding-top: 50px;
+    }
 
     &--sub {
       padding-top: 30px;
@@ -18,7 +28,18 @@
 
     &--txt {
       line-height: 2.2;
-      margin-bottom: 20px;
+
+      @include mqMd {
+        margin-bottom: 1em;
+      }
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+
+      @include mqMd {
+        line-height: 1.4;
+      }
     }
   }
 }

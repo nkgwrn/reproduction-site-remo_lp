@@ -1,11 +1,19 @@
 .p-life {
   &__body {
-    &--txt {
-      padding-top: 10px;
-    }
+    // &--txt {
+    //   padding-top: 10px;
+
+    //   @include mqSm {
+    //     padding: 0;
+    //   }
+    // }
 
     &--scene {
       padding: 20px 18% 60px;
+
+      @include mqSm {
+        padding: 20px 0 0;
+      }
     }
   }
 
@@ -13,12 +21,31 @@
     display: flex;
     justify-content: center;
 
+    @include mqSm {
+      display: block;
+    }
+
     &__item {
       margin-right: 4vw;
       flex: 1;
 
+      @include mqSm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+
+        > img {
+          width: 120%;
+        }
+      }
+
       &--link {
         position: relative;
+
+        @include mqSm {
+          font-size: 20px;
+        }
 
         &::after {
           content: "";

@@ -1,7 +1,13 @@
 .p-model {
   &__body {
+    margin-top: 20px;
+
     &--image {
       padding: 0px 13%;
+
+      @include mqSm {
+        padding: 0;
+      }
     }
   }
 

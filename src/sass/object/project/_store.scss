@@ -3,6 +3,12 @@
     font-weight: 500;
     font-size: 16px;
 
+    &--txt {
+      @include mqSm {
+        line-height: 2.2;
+      }
+    }
+
     &--image {
       margin: 45px 0;
     }

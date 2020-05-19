@@ -5,12 +5,25 @@
   padding-bottom: 200px;
   font-size: 0.875em;
 
+  @include mqSm {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
   &-list {
     display: flex;
     justify-content: space-between;
 
+    @include mqSm {
+      display: block;
+    }
+
     &__item {
       flex: 1;
+
+      @include mqSm {
+        margin-bottom: 30px;
+      }
 
       &:last-child {
         flex: 1.5;
@@ -20,6 +33,10 @@
         font-size: 24px;
         font-weight: 700;
         color: rgb(189, 189, 189);
+
+        @include mqSm {
+          font-size: 18px;
+        }
       }
 
       &--body {

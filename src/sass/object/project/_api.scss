@@ -3,8 +3,18 @@
     font-size: 16px;
     font-weight: 500;
 
+    &--txt {
+      @include mqSm {
+        line-height: 2.2;
+      }
+    }
+
     &--link {
       padding-top: 5px;
+
+      @include mqSm {
+        margin-bottom: 50px;
+      }
 
       a {
         color: $link-color;

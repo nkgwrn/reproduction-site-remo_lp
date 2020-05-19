@@ -2,6 +2,10 @@
   &__body {
     &--card {
       margin-top: 110px;
+
+      @include mqSm {
+        margin-top: 0;
+      }
     }
   }
 }

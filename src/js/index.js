@@ -16,7 +16,7 @@ window.addEventListener(
 
 $(function () {
   //背景画像のtopの位置を取得
-  var bg1_top = $(".p-mv").offset().top;
+  var bg1_top = $(".p-mv__bg").offset().top;
 
   // ウィンドウの高さを取得
   var win_h = $(window).height();
@@ -30,7 +30,7 @@ $(function () {
 
     //スクロール量と動かすタイミング位置を判定した場合は背景画像を動かす
     if (y >= start_bg1) {
-      $(".p-mv").css("background-position-y", -(y - bg1_top) * 0.3 + "px");
+      $(".p-mv__bg").css("top", -(y - bg1_top) * 0.3 + "px");
     }
   });
 });
