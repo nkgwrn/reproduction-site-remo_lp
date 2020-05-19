@@ -27,8 +27,10 @@
     background-repeat: no-repeat;
 
     @include mqSm {
-      background-position-x: 80%;
-      background-size: 160%;
+      padding-top: 50px;
+      height: calc(145vw + 50px);
+      background-position-x: 50%;
+      background-size: cover;
       background-repeat: no-repeat;
     }
   }
@@ -51,10 +53,19 @@
     transform: translate(-50%, -80%);
     z-index: 2;
 
+    @include mqSm {
+      width: 100%;
+      top: 40%;
+    }
+
     &__lead {
       font-size: 0.875em;
       color: #fff;
       margin-top: -60px;
+
+      @include mqSm {
+        margin-top: -25px;
+      }
     }
   }
 }

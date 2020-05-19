@@ -1,3 +1,10 @@
+.u-show-pc {
+  display: block !important;
+
+  @include mqMd {
+    display: none !important;
+  }
+}
 
 .u-show-md {
   display: none !important;

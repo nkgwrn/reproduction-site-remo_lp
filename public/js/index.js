@@ -33,4 +33,14 @@ $(function () {
       $(".p-mv__bg").css("top", -(y - bg1_top) * 0.3 + "px");
     }
   });
+
+  var win_w = $(window).width();
+
+  $(".js-toggle").on("click", function () {
+    if (win_w <= 768) {
+      $(this).toggleClass("is-active");
+      $(".l-header-nav").toggleClass("is-open");
+      $(".l-nav").toggleClass("is-open");
+    }
+  });
 });

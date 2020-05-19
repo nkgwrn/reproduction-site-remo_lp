@@ -338,13 +338,91 @@ img {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .l-header {
+    height: 50px;
+    background: #454545;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .l-header-logo {
   display: block;
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .l-header-logo {
+    display: none;
+  }
+}
+
 .l-header-logo__img {
   max-height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .l-header-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+}
+
+.l-header-nav.is-open {
+  opacity: 1;
+  display: block;
+}
+
+.l-header-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .l-header-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 24px;
+    height: 15px;
+  }
+  .l-header-toggle__item {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: #bbb;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .l-header-toggle__item--center {
+    top: 7px;
+  }
+  .l-header-toggle__item--bottom {
+    top: 14px;
+  }
+}
+
+.l-header-toggle.is-active .l-header-toggle__item--top {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.l-header-toggle.is-active .l-header-toggle__item--center {
+  display: none;
+}
+
+.l-header-toggle.is-active .l-header-toggle__item--bottom {
+  transform: rotate(-45deg);
+  top: 8px;
 }
 
 .l-nav {
@@ -352,8 +430,33 @@ img {
   font-size: 0.875em;
 }
 
+@media only screen and (max-width: 768px) {
+  .l-nav {
+    height: 100%;
+    display: block;
+    padding: 35px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    transition-delay: 0.01s;
+  }
+}
+
+.l-nav.is-open {
+  transform: translateX(0);
+}
+
 .l-nav__item {
   margin-left: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+  .l-nav__item {
+    margin-left: 0;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
 }
 
 .l-nav__item__link {
@@ -482,6 +585,12 @@ img {
 .l-footer-list--signin__btn > input[type="button"]:hover {
   background-color: #fff;
   color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  .l-main {
+    margin-top: 50px;
+  }
 }
 
 /* =========================================================
@@ -677,6 +786,12 @@ img {
   top: 72%;
 }
 
+@media only screen and (max-width: 480px) {
+  .c-btn--mv {
+    top: 60%;
+  }
+}
+
 .c-btn--mv__item {
   border: 2px solid #fff;
 }
@@ -691,6 +806,12 @@ img {
 
 .c-btn--mv__item:first-child {
   margin-right: 8vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .c-btn--mv__item:first-child {
+    margin: 0 auto 35px;
+  }
 }
 
 .c-btn--mv__item > a {
@@ -760,8 +881,10 @@ img {
 
 @media only screen and (max-width: 480px) {
   .p-mv__bg {
-    background-position-x: 80%;
-    background-size: 160%;
+    padding-top: 50px;
+    height: calc(145vw + 50px);
+    background-position-x: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -785,10 +908,23 @@ img {
   z-index: 2;
 }
 
+@media only screen and (max-width: 480px) {
+  .p-mv__heading {
+    width: 100%;
+    top: 40%;
+  }
+}
+
 .p-mv__heading__lead {
   font-size: 0.875em;
   color: #fff;
   margin-top: -60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .p-mv__heading__lead {
+    margin-top: -25px;
+  }
 }
 
 .p-control {
@@ -1149,6 +1285,44 @@ img {
   font-weight: 500;
 }
 
+.u-strong {
+  font-weight: 700;
+}
+
+.u-black {
+  font-weight: 900;
+}
+
 .u-lt05 {
   letter-spacing: 0.05em;
+}
+
+.u-show-pc {
+  display: block !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .u-show-pc {
+    display: none !important;
+  }
+}
+
+.u-show-md {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .u-show-md {
+    display: block !important;
+  }
+}
+
+.u-show-sm {
+  display: none !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .u-show-sm {
+    display: block !important;
+  }
 }

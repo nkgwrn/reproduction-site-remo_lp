@@ -14,7 +14,7 @@
 @import "layout/header";
 @import "layout/footer";
 // @import "layout/gnav";
-// @import "layout/main";
+@import "layout/main";
 /* =========================================================
  Object
 ========================================================= */
@@ -52,3 +52,4 @@
 @import "object/utility/border";
 @import "object/utility/margin";
 @import "object/utility/font";
+@import "object/utility/show";
