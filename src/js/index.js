@@ -14,33 +14,37 @@ window.addEventListener(
   false
 );
 
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
   //背景画像のtopの位置を取得
-  var bg1_top = $(".p-mv__bg").offset().top;
+  const $element = document.getElementById("js-bg");
+  const rect = $element.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const bg1_top = rect.top + scrollTop; // offset().top;
 
   // ウィンドウの高さを取得
-  var win_h = $(window).height();
-
+  var win_h = window.innerHeight;
   //背景画像を動かすタイミングの位置を計算
   var start_bg1 = bg1_top - win_h;
+  window.onscroll = function () {
+    var y =
+      window.document.documentElement.scrollTop || document.body.scrollTop;
+    var setTop = -(y - bg1_top) * 0.3 + "px";
 
-  $(window).scroll(function () {
-    //スクロール量
-    var y = $(this).scrollTop();
-
-    //スクロール量と動かすタイミング位置を判定した場合は背景画像を動かす
     if (y >= start_bg1) {
-      $(".p-mv__bg").css("top", -(y - bg1_top) * 0.3 + "px");
+      $element.style.top = setTop;
     }
-  });
+  };
 
-  var win_w = $(window).width();
+  var win_w = window.innerWidth;
+  var toggle = document.getElementById("js-toggle");
+  var headNav = document.getElementById("js-headNav");
+  var Nav = document.getElementById("js-nav");
 
-  $(".js-toggle").on("click", function () {
+  toggle.onclick = function () {
     if (win_w <= 768) {
-      $(this).toggleClass("is-active");
-      $(".l-header-nav").toggleClass("is-open");
-      $(".l-nav").toggleClass("is-open");
+      toggle.classList.toggle("is-active");
+      headNav.classList.toggle("is-open");
+      Nav.classList.toggle("is-open");
     }
-  });
+  };
 });
