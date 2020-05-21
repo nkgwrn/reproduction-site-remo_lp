@@ -14,15 +14,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/css/swiper.min.css"
   />
-  <!-- <link
-    rel="stylesheet"
-    type="text/css"
-    href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css"
-  /> -->
   <link rel="stylesheet" href="./css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/js/swiper.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-  <script src="./js/index.js"></script>
 </head>
 
   <body id="wrapper">
@@ -91,6 +84,7 @@
           </div>
         </div>
       </div>
+      <div class="p-wrap">
       <section class="c-panel p-control">
         <div class="c-container">
           <h2 class="c-panel__head c-panel__head--top">スマホや音声で<br />音声コントロール</h2>
@@ -136,23 +130,23 @@
              <p class="c-panel__body--txt p-life__body--txt">
               様々なシーンでお使いいただけます。
             </p>
-            <div class="js-fadein p-life__body--scene js-fadein js-fadein--up ">
+            <div class="p-life__body--scene ">
               <ul class="p-life-scene">
-                <li class="p-life-scene__item">
+                <li class="p-life-scene__item js-fadein js-fadein--up">
                   <img src="image/img_life_single.png" alt="" /><a
                     href=""
                     class="p-life-scene__item--link"
                     >一人暮らしの方に＞</a
                   >
                 </li>
-                <li class="p-life-scene__item">
+                <li class="p-life-scene__item js-fadein js-fadein--up">
                   <img src="image/img_life_owner.png" alt="" /><a
                     href=""
                     class="p-life-scene__item--link"
                     >ペットオーナーの方に＞</a
                   >
                 </li>
-                <li class="p-life-scene__item">
+                <li class="p-life-scene__item js-fadein js-fadein--up">
                   <img src="image/img_life_family.png" alt="" /><a
                     href=""
                     class="p-life-scene__item--link"
@@ -239,7 +233,7 @@
             </p>
             <div class="p-rule__body--card">
               <section class="c-card -reverse">
-                <div class="c-card-box">
+                <div class="c-card-box js-fadein js-fadein--rl">
                   <h3 class="c-card__head"> <span class="u-m1c">GPS</span></h3>
                   <div class="c-card__body">
                     <p class="c-card__body--txt">自宅に近づくとエアコンを</p>
@@ -247,11 +241,11 @@
                   </div>
                 </div>
                 <div class="c-card-box">
-                  <img src="image/img_rule_gps.jpg" alt="" />
+                  <img src="image/img_rule_gps.jpg" alt="" class="js-fadein js-fadein--lr"/>
                 </div>
               </section>
               <section class="c-card">
-                <div class="c-card-box">
+                <div class="c-card-box js-fadein js-fadein--lr">
                   <h3 class="c-card__head">人感センサー</h3>
                   <div class="c-card__body">
                     <p class="c-card__body--txt">
@@ -261,11 +255,11 @@
                   </div>
                 </div>
                 <div class="c-card-box">
-                  <img src="image/img_rule_sensor.jpg" alt="" />
+                  <img src="image/img_rule_sensor.jpg" alt="" class="js-fadein js-fadein--rl"/>
                 </div>
               </section>
               <section class="c-card -reverse">
-                <div class="c-card-box">
+                <div class="c-card-box js-fadein js-fadein--rl">
                   <h3 class="c-card__head">曜日・時間</h3>
                   <div class="c-card__body">
                     <p class="c-card__body--txt">起床時にテレビを</p>
@@ -273,11 +267,11 @@
                   </div>
                 </div>
                 <div class="c-card-box">
-                  <img src="image/img_rule_day.jpg" alt="" />
+                  <img src="image/img_rule_day.jpg" alt="" class=" js-fadein js-fadein--lr"/>
                 </div>
               </section>
               <section class="c-card">
-                <div class="c-card-box">
+                <div class="c-card-box js-fadein js-fadein--lr">
                   <h3 class="c-card__head">温度・湿度</h3>
                   <div class="c-card__body">
                     <p class="c-card__body--txt">28度以上でエアコンを</p>
@@ -285,7 +279,7 @@
                   </div>
                 </div>
                 <div class="c-card-box">
-                  <img src="image/img_rule_temp.jpg" alt="" />
+                  <img src="image/img_rule_temp.jpg" alt="" class=" js-fadein js-fadein--rl"/>
                 </div>
               </section>
             </div>
@@ -394,7 +388,7 @@
                 </p>
               </div>
               <div class="p-voice__body--image">
-                <img src="image/img_voice_main.png" alt="" />
+                <img src="image/img_voice_main.png" alt="" class=" js-fadein js-fadein--up"/>
                 <p class="c-capture">
                   ※満足度は、全ての既存ユーザーの皆様に2019年3月に実施したアンケートの結果。<span class="u-m1c">Google
                   Home</span>連携の評価は、2019年3月23日現在の<span class="u-m1c">Rating</span>。
@@ -496,8 +490,13 @@
         </div>
         <!-- /.c-container -->
       </section>
+
+      </div>
     </main>
     <!-- /.l-main -->
+    <div id="c-pagetop">
+      <a href="#">↑</a>
+  </div>
     <footer class="l-footer">
   <div class="c-container">
     <ul class="l-footer-list">
@@ -558,5 +557,6 @@
 </footer>
 <!-- /.l-footer -->
 
+    <script src="./js/index.js"></script>
   </body>
 </html>

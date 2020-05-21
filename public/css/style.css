@@ -19,6 +19,47 @@
   }
 }
 
+.js-fadein {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.js-fadein.is-show {
+  opacity: 1;
+  transform: none;
+}
+
+.js-fadein--up {
+  transform: translate(0, 20px);
+}
+
+.js-fadein--rl {
+  transform: translate(-20px, 0);
+}
+
+.js-fadein--lr {
+  transform: translate(20px, 0);
+}
+
+#c-pagetop {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  opacity: 0;
+  zoom: 1;
+  z-index: 9999;
+}
+
+#c-pagetop > a {
+  display: block;
+  padding: 2px 19px 8px;
+  background: #bbb;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -597,6 +638,10 @@ img {
   }
 }
 
+.c-card-box {
+  overflow-x: hidden;
+}
+
 .c-card-box:first-child {
   width: 40%;
 }
@@ -1095,6 +1140,10 @@ img {
   .p-contact__body--txt {
     line-height: 2.2;
   }
+}
+
+.p-wrap {
+  background: #fff;
 }
 
 /* ---------------------------------------------------------
