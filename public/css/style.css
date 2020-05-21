@@ -942,7 +942,7 @@ img {
 }
 
 .p-control__body {
-  margin-bottom: 25px;
+  margin-bottom: -25px;
 }
 
 @media only screen and (max-width: 480px) {
