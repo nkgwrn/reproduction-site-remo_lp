@@ -58,16 +58,16 @@
 // 	transform: scale(0, 0);
 // }
 
-.js-fadein {
-	opacity: 0;
-	transition: all .5s ease;
+// .js-fadein {
+// 	opacity: 0;
+// 	transition: all .5s ease;
 	
-	&.is-show {
-		opacity: 1;
-  transform: none;
-	}
-}
+// 	&.is-show {
+// 		opacity: 1;
+//   transform: none;
+// 	}
+// }
 
-.js-fadein--up {
-  transform: translate(0, 100px);
-}
+// .js-fadein--up {
+//   transform: translate(0, 100px);
+// }

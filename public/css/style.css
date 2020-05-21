@@ -19,20 +19,6 @@
   }
 }
 
-.js-fadein {
-  opacity: 0;
-  transition: all .5s ease;
-}
-
-.js-fadein.is-show {
-  opacity: 1;
-  transform: none;
-}
-
-.js-fadein--up {
-  transform: translate(0, 100px);
-}
-
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
