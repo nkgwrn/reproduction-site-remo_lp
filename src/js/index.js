@@ -1,3 +1,16 @@
+var scrollAnimationElm = document.querySelectorAll('.js-fadein');
+var scrollAnimationFunc = function() {
+  for(var i = 0; i < scrollAnimationElm.length; i++) {
+    var triggerMargin = 300;
+    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+      scrollAnimationElm[i].classList.add('show');
+    }
+  }
+}
+window.addEventListener('load', scrollAnimationFunc);
+window.addEventListener('scroll', scrollAnimationFunc);
+window.onscroll = scrollAnimationFunc;
+
 window.addEventListener(
   "DOMContentLoaded",
   function () {
@@ -48,3 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+// var scrollAnimationElm = document.querySelectorAll('.js-fadein');
+// var scrollAnimationFunc = function() {
+//   for(var i = 0; i < scrollAnimationElm.length; i++) {
+//     var triggerMargin = 300;
+//     if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+//       scrollAnimationElm[i].classList.add('is-show');
+//     }
+//   }
+// }
+// window.addEventListener('load', scrollAnimationFunc);
+// window.addEventListener('scroll', scrollAnimationFunc);
