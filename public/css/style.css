@@ -843,6 +843,20 @@ img {
   line-height: 1.4;
 }
 
+.c-capture > a {
+  position: relative;
+}
+
+.c-capture > a:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #c3ccee;
+  bottom: -3px;
+  left: 0;
+}
+
 /* ---------------------------------------------------------
  Project
 --------------------------------------------------------- */
