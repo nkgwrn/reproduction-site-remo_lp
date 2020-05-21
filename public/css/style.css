@@ -1088,6 +1088,10 @@ img {
   margin-top: 10px;
 }
 
+.p-store {
+  padding-bottom: 0;
+}
+
 .p-store__body {
   font-weight: 500;
   font-size: 16px;
