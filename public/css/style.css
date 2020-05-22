@@ -330,11 +330,11 @@ img {
   position: absolute;
   z-index: 5;
   width: 100%;
-  padding: 15px 20px;
+  padding: 5px 20px 5px 5px;
   height: 90px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 @media only screen and (max-width: 768px) {
@@ -490,11 +490,13 @@ img {
 .l-footer-list {
   display: flex;
   justify-content: space-between;
+  padding: 0 60px;
 }
 
 @media only screen and (max-width: 480px) {
   .l-footer-list {
     display: block;
+    padding: 0;
   }
 }
 
@@ -506,6 +508,12 @@ img {
   .l-footer-list__item {
     margin-bottom: 30px;
     width: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .l-footer-list__item {
+    width: 100%;
   }
 }
 
@@ -558,6 +566,12 @@ img {
   width: 100%;
   background: #fff;
   padding: 12px 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .l-footer-list--signin__input {
+    width: 70%;
+  }
 }
 
 .l-footer-list--signin__input > input[type="text"] {
@@ -865,6 +879,16 @@ img {
   width: 230px;
 }
 
+.c-btn--wide__item:first-child {
+  margin-right: 16vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .c-btn--wide__item:first-child {
+    margin: 0 auto 35px;
+  }
+}
+
 .c-capture {
   margin-top: 30px;
   line-height: 1.4;
@@ -888,7 +912,7 @@ img {
  Project
 --------------------------------------------------------- */
 .p-mv {
-  height: 47vw;
+  height: 43vw;
   background-attachment: fixed;
   position: relative;
   background-repeat: no-repeat;
@@ -905,14 +929,14 @@ img {
 .p-mv__bg {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 43vw;
   left: 0;
   top: 0;
   z-index: -1;
   background: url(../image/img_mv.jpg);
   background-position: center 0;
   display: block;
-  background-size: 120%;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -941,7 +965,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -70%);
   z-index: 2;
 }
 
@@ -1369,5 +1393,37 @@ img {
 @media only screen and (max-width: 480px) {
   .u-show-sm {
     display: block !important;
+  }
+}
+
+.u-brSp {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .u-brSp {
+    display: block;
+  }
+}
+
+.u-brTab {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .u-brTab {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .u-brTab {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .u-brPc {
+    display: none !important;
   }
 }

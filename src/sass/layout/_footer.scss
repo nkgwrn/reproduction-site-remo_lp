@@ -17,9 +17,11 @@
   &-list {
     display: flex;
     justify-content: space-between;
+    padding: 0 60px;
 
     @include mqSm {
       display: block;
+      padding: 0;
     }
 
     &__item {
@@ -28,6 +30,10 @@
       @include mqMd {
         margin-bottom: 30px;
         width: 25%;
+      }
+
+      @include mqSm {
+        width: 100%;
       }
 
       &:last-child {
@@ -77,6 +83,10 @@
         width: 100%;
         background: #fff;
         padding: 12px 15px;
+
+        @include mqSm {
+          width: 70%;
+        }
 
         > input[type="text"] {
           width: 100%;
