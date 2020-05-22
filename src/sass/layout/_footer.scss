@@ -5,6 +5,10 @@
   padding-bottom: 200px;
   font-size: 0.875em;
 
+  @include mqMd {
+    padding-bottom: 170px;
+  }
+
   @include mqSm {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -21,18 +25,24 @@
     &__item {
       flex: 1;
 
-      @include mqSm {
+      @include mqMd {
         margin-bottom: 30px;
+        width: 25%;
       }
 
       &:last-child {
         flex: 1.5;
+
+        @include mqMd {
+          flex: 1;
+        }
       }
 
       &--head {
         font-size: 24px;
         font-weight: 700;
         color: rgb(189, 189, 189);
+        word-wrap: break-word;
 
         @include mqSm {
           font-size: 18px;
