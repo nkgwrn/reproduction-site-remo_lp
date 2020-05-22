@@ -476,7 +476,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   .l-footer {
-    padding-bottom: 170px;
+    padding-bottom: 50px;
   }
 }
 
@@ -700,6 +700,12 @@ img {
 .c-card__body {
   margin-top: 30px;
   padding: 0 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .c-card__body {
+    padding: 0;
+  }
 }
 
 .c-card__body--txt:nth-child(2) {
