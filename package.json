@@ -1,23 +1,17 @@
 {
-  "name": "1q-02-remo",
+  "name": "nature-remo-lp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/nakagawara/1q-02-remo.git"
+    "start": "gulp watch",
+    "deploy": "npm run build && gh-pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/nakagawara/1q-02-remo/issues"
-  },
-  "homepage": "https://gitlab.com/nakagawara/1q-02-remo#README",
+  "homepage": "https://nkgwrn.github.io/reproduction-site-remo_lp/",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "browser-sync": "^2.26.7",
